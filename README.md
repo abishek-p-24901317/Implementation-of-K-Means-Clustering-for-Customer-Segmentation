@@ -8,10 +8,10 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Load & inspect data: Read the Mall_Customers.csv file into a DataFrame, view column types and check for missing values to ensure the dataset is clean.
+2. Determine optimal k (Elbow method): For k from 1 to 10, fit a K-Means model on the two numeric features Annual Income and Spending Score, record the within-cluster-sum-of-squares (WCSS), and plot WCSS vs. k to spot the “elbow” where adding clusters yields diminishing returns.
+3. Train final model & label data: Choose k = 5 (from the elbow), train K-Means, predict each customer’s cluster, and append the resulting labels to the DataFrame as a new cluster column.
+4. Visualize segments: Split the DataFrame by cluster label and create a scatter plot of Annual Income vs. Spending Score, coloring each cluster differently and adding a legend to clearly show the five customer segments.
 
 ## Program:
 ```
